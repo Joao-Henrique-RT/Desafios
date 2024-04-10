@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area circulo</title>
+    <script src="app.js"></script>
+</head>
+<!--Folha de estilos-->
+<style>
+
+.container{
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    background: aqua;
+    
+}
+
+.campos{
+    text-align: center;
+
+}
+
+button{
+    margin-top: 20px;
+}
+
+#legenda{
+    text-align: center;
+}
+
+</style>
+
+
+<body>
+
+    <div class="container">
+        <h1 id="legenda">Area do círculo</h1>
+        <div class="campos">
+            <label for="raio">Digite o raio do circulo</label>    
+                <input type="text" name="raio" id="raio">
+            <br>
+            <button onclick="Calcular()">Calcular</button> 
+            
+            <h1 id="legenda">A area é:</h1>
+            <p></p>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
