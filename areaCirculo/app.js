@@ -7,7 +7,9 @@
 
         area = n * raio**2
 
-        alert(area)
+        console.log("A= "+area.toFixed(4))
+
+       
     }
 
 
