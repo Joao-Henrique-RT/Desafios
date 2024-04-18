@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabuada Automática</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-    <style>
-        .container{
-            margin: 0 auto;
-            width: 500px;
-            height: 500px;
-            background: brown;
-        }
-
-    </style>
-
-
-
+       
 <body>
     
     <div class="container">
         
+        <div id="campos">       
+                <label for="num1">Digite o primeiro número</label>
+
+                <input type="number" name="num1" id="num1">
+        
+                <label for="num2">Digite até quanto será multiplicado</label>
+
+                <input type="number" name="num2" id="num2">
+
+                <button id="botao" onclick="multiplicar()">Multiplicar!</button>
+
+                <textarea name="" id="resultado" cols="30" rows="10"></textarea>
+
+        </div>   
+
     </div>
 
-
-
 </body>
+<script src="app.js"></script>
 </html>
