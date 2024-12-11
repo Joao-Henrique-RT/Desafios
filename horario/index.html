@@ -32,20 +32,22 @@
 </head>
 <body>
     
-     <div class="tempo"><h1 class="horario">asasasas</h1></div>
+     <div class="tempo"><h1 class="horario"></h1></div>
     
 
 
 </body>
     <script>
-        
-        let horario = document.querySelector(".horario")
+        var data = new Date()
+        var horario = document.querySelector(".horario")
 
-        alterarInput( )
+        setInterval(alterText(),1000)
 
-        function alterarInput(){
-            horario.innerHTML("aa")
+        function alterText(){
+            horario.innerHTML = (data.toLocaleTimeString())
         }
+
+
         
     </script>
 </html>
