@@ -41,11 +41,11 @@
         var data = new Date()
         var horario = document.querySelector(".horario")
 
-        
-        setInterval(function(){
-            horario.innerHTML = (data.toLocaleTimeString())
-        },1000)
+        setInterval(alterText(),1000)
 
+        function alterText(){
+            horario.innerHTML = (data.toLocaleTimeString())
+        }
 
 
         
